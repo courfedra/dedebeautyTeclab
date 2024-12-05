@@ -1,10 +1,11 @@
 import { Login } from "../sesion/Login";
 import { useAuth0 } from "@auth0/auth0-react";
 import { useState,useEffect,useContext} from "react";
-import "./ComprarProducto.css"
-import "../../header/sesion.css"
+import "./ComprarProducto.css";
+import "../../header/sesion.css";
 import { CartContext } from "../CartContext";
 import { Link } from "react-router-dom";
+
 export const BotonComprar=({producto})=>{
     const {isAuthenticated} = useAuth0()
     const {cartList, addToCart}=useContext(CartContext);
