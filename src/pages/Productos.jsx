@@ -2,7 +2,7 @@ import productos from "../assets/products/products.json"
 import bannerMadre from "../assets/dedeBeautyBannerOfertaMadre.jpg"
 import "./productos.css"
 import { MostrarProductoLista } from "../components/productos/MostrarProductoLista";
-import { ShowCategories } from "../components/functions/showCategories";
+//import { ShowCategories } from "../components/functions/showCategories";
 import { useState, useEffect, useContext } from "react";
 import { ContextVariables } from "../components/ContextVariables";
 
@@ -19,7 +19,7 @@ export const Productos = () => {
             </div>
             <div className="categories-products-section">
                 <div className="categories-products">
-                    <ShowCategories prod={datos}/>
+                    {/*<ShowCategories prod={datos}/>*/}
                 </div>
                 <div className="productos">
                     {listCategories.map((e)=>{
