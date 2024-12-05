@@ -1,11 +1,11 @@
-import {Inicio} from "./pages/Inicio"
-import {Contacto} from "./pages/Contacto"
-import {Nosotros} from "./pages/Nosotros"
-import {Productos} from "./pages/Productos"
-import { MostrarCategoriasProducto } from "./components/productos/MostrarCategoriasProductos"
-//import { MostrarProductoDetalle } from "./components/productos/mostrarProductoDetalle"
-import { Dashboard } from "./components/sesion/Dashboard"
-import {Cart} from "./components/carrito/Cart"
+import {Inicio} from "./pages/Inicio";
+import {Contacto} from "./pages/Contacto";
+import {Nosotros} from "./pages/Nosotros";
+import {Productos} from "./pages/Productos";
+import { MostrarCategoriasProducto } from "./components/productos/MostrarCategoriasProductos";
+import {MostrarProductoDetalle} from "./components/productos/mostrarProductoDetalle";
+import { Dashboard } from "./components/sesion/Dashboard";
+import {Cart} from "./components/carrito/Cart";
 export const NavbarMenu = [
     {
         path: "/",
