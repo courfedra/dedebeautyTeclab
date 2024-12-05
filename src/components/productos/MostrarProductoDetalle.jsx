@@ -1,6 +1,6 @@
-import { useParams } from "react-router-dom"
-import { useContext,useState,useEffect } from "react";
 import "./mostrarProductoDetalle.css";
+import { useParams } from "react-router-dom";
+import { useContext,useState,useEffect } from "react";
 import { ProductoDetalle } from "./ProductoDetalle";
 import { ContextVariables } from "../ContextVariables";
 

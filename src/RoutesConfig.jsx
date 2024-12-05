@@ -29,18 +29,18 @@ export const NavbarMenu = [
     },
     {
         path:"/producto/:IdProducto",
-        element:<MostrarProductoDetalle/>
+        element:<MostrarProductoDetalle />
     },
     {
         path:"/categoria/:IdCategoria",
-        element:<MostrarCategoriasProducto/>
+        element:<MostrarCategoriasProducto />
     },
     {
         path:"/perfil/:IdPerfil",
-        element:<Dashboard/>
+        element:<Dashboard />
     },
     {
         path:"/cart",
-        element:<Cart/>
+        element:<Cart />
     },
 ]
