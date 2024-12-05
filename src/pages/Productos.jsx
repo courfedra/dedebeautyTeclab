@@ -19,7 +19,7 @@ export const Productos = () => {
             </div>
             <div className="categories-products-section">
                 <div className="categories-products">
-                    {/*<ShowCategories prod={datos}/>*/}
+                    <ShowCategories prod={datos}/>
                 </div>
                 <div className="productos">
                     {listCategories.map((e)=>{
