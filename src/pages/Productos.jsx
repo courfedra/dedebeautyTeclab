@@ -1,8 +1,8 @@
-import productos from "../assets/products/products.json"
-import bannerMadre from "../assets/dedeBeautyBannerOfertaMadre.jpg"
-import "./productos.css"
+import productos from "../assets/products/products.json";
+import bannerMadre from "../assets/dedeBeautyBannerOfertaMadre.jpg";
+import "./productos.css";
 import { MostrarProductoLista } from "../components/productos/MostrarProductoLista";
-import { ShowCategories } from "../components/functions/showCategories";
+import {ShowCategories} from "../components/functions/ShowCategories";
 import { useState, useEffect, useContext } from "react";
 import { ContextVariables } from "../components/ContextVariables";
 
