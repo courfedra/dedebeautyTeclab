@@ -1,0 +1,45 @@
+.containerMediosPagos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .bannerMPdescuento{
+        padding: 0;
+        background-color: #fdffff;
+        margin: 0;
+        img{
+            width:100%
+        }
+    }
+    .mediosPagos{
+        background-color: #fdffff;
+        width: 100%;
+        min-height:400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        padding: 12px 0;
+        h3{padding: 12px 0;}
+        .containerLogos{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: start;
+            gap: 12px;
+            .boxLogos{
+                width:150px;
+                img{
+                    width:150px;
+                }
+                p{
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        }
+
+    }
+}

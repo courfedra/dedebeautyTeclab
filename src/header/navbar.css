@@ -1,0 +1,24 @@
+navbar{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    width:100%;
+    display: flex;
+    justify-content: start;
+}
+
+a{
+    color: var(--negro);
+    text-decoration: none;
+    font-size:24px;
+    transition: all .15s ease-in-out ;
+    margin: 0 12px;
+}
+
+a:hover{
+    text-decoration: underline double;
+}

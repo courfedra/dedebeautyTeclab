@@ -1,0 +1,7 @@
+.container-producto{
+    background-color: violet;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

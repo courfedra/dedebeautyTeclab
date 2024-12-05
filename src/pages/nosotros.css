@@ -1,0 +1,36 @@
+.nosotrosContainer{
+    background: linear-gradient(45deg, var(--rosa),var(--blanco));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    .nosotrosTitulo{
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        font-size: 48px;
+    }
+    .boxNosotros{
+        background-color: var(--blanco);
+        border-radius: 12px;
+        width: 75%;
+        margin: 12px 0;
+        padding: 12px 8px;
+        box-shadow: 0 0 5px 1px var(--gris);
+        h3{
+            color: var(--gris);
+            font-size: 36px;
+            font-weight: 700;
+        }
+        p{
+            color: var(--gris);
+            font-size: 24px;
+            padding: 8px 16px;
+            span{
+                display: flex;
+                padding: 8px 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+.box-comprar-conectado{
+    border:2px solid var(--blanco);
+    padding: 6px 12px;
+    margin: 12px 4px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size: 24px;
+    }
+    .anchor-sesion{
+        background-color: aliceblue;
+        padding: 4px;
+        border-radius: 24px;
+    }
+}
+.box-produto-carrito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .box-adquirir-restar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        button{
+            border:none;
+            background-color: var(--naranja);
+            border-radius: 16px;
+            width:100%;
+            margin:8px 0;
+            transition: all .15s ease-in-out;
+            cursor: pointer;
+            font-size: 1.75em;
+            &:hover{
+                background-color: var(--blanco);
+            }
+        }
+        .btn-no-active{
+            background-color: var(--gris);
+            &:hover{background-color: var(--gris);}
+        }
+        span{
+            font-size: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 4px 8px;
+            margin: 8px;
+        }
+    }
+    .box-btn-confirm{
+        width: 100%;
+        padding: 4px 0px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        a{
+            background-color: var(--verdeAmarillento);
+            border-radius: 16px;
+            border:none;
+            width:100%;
+            padding: 8px 4px;
+            cursor: pointer;
+            &:hover{
+                background-color: var(--verde);
+            }
+
+        }
+    }
+}
