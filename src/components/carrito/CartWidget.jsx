@@ -4,7 +4,7 @@ import {CartContext} from "../CartContext"
 import {useContext,useState,useEffect} from "react"
 
 export const CartWidget = () => {
-    const {cartList,precioFinal}=useContext(CartContext);
+    const {cartList}=useContext(CartContext);
     const[cantCompra,setCantCompra]=useState(0);
     let valor = 0
     //por cada elemento del carrito, le asigno a la variable valor la suma de todas las cantidades de items comprado
@@ -27,7 +27,6 @@ export const CartWidget = () => {
                         <span>Productos: {cartList.length}</span>
                         <span>Articulos: {cantCompra}</span>
                     </div>
-                    <h4>${precioFinal}</h4>
                 </Link>
             </>
 

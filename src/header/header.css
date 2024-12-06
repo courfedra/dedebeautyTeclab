@@ -14,3 +14,11 @@ header{
 .logoHeader:hover{
     filter:drop-shadow(2.5px 2.5px .35em var(--negro));
 }
+
+@media screen and (max-width:768px){
+    header{
+        position: relative;
+        justify-content: space-between;
+        z-index: 1000;
+    }
+}

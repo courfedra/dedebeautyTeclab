@@ -12,7 +12,7 @@
     }
 }
 .profile-sesion{
-    width: 25%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,14 +20,18 @@
     padding-bottom:8px;
     gap: 8px;
     .profile-sesion-cart-user{
+        margin: 12px 0;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 12px;
         .profile-sesion-user{
             display: flex;
+            width: 100%;
             flex-direction: column;
-            font-size: 1.25em;
+            font-size: 1.2em;
+            text-align: center;
             span{
                 color: var(--negro);
             }
@@ -54,5 +58,29 @@
                 }
             }
         }
+    }
+}
+@media screen and (max-width:768px){
+    .sesion{
+        width:100%;
+        justify-content: center;
+        flex-direction: column;
+        gap:12px;
+    }
+    .profile-sesion{
+        .profile-sesion-cart-user{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .linkCarrito{
+                flex-direction: column;
+                gap:12px;
+            }
+        }
+    }
+    .dashboardLogoutButton{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
     }
 }

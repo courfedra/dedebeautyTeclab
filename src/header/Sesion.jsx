@@ -5,7 +5,6 @@ import "./sesion.css";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { ContextVariables } from "../components/ContextVariables";
-import { CartContext } from "../components/CartContext";
 import {CartWidget} from "../components/carrito/CartWidget"
 
 const LogoutButton=()=>{
@@ -18,7 +17,6 @@ const LogoutButton=()=>{
 const Profile=()=>{
     const {user, isAuthenticated,isLoading} = useAuth0()
     const {reiniciarListCategories}=useContext(ContextVariables);
-    const {cartList}=useContext(CartContext);
     if (isLoading){
         return(
             <div>Cargando...</div>
@@ -28,10 +26,10 @@ const Profile=()=>{
         isAuthenticated &&
         <div className="profile-sesion">
             <div className="profile-sesion-cart-user">
-                <p className="profile-sesion-user">¡Bienvenido! <span>{user.name}</span></p>
+                <p className="profile-sesion-user">¡Bienvenido! {user.name}</p>
                 <CartWidget/>
             </div>
-            <div>
+            <div className="dashboardLogoutButton">
                 <Link onClick={()=>{reiniciarListCategories()}} to={`/perfil/${user.nickname}`}>Perfil</Link>
                 <LogoutButton/>
             </div>
