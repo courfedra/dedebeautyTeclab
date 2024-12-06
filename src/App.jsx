@@ -8,9 +8,9 @@ import "./app.css"
 
 function App() {
   return(
-    <BrowserRouter basename="/">
-      <CartContextProvider>
-        <ContextVariablesProvider>
+    <CartContextProvider>
+      <ContextVariablesProvider>
+        <BrowserRouter basename="/">
           <Header />
           <Routes>
             {NavbarMenu.map((e)=>{
@@ -20,9 +20,9 @@ function App() {
             })}
           </Routes>
           <Footer/>
-        </ContextVariablesProvider>
-      </CartContextProvider>
-    </BrowserRouter>
+        </BrowserRouter>
+      </ContextVariablesProvider>
+    </CartContextProvider>
   )
 }
 
