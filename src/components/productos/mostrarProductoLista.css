@@ -154,7 +154,6 @@
                 h3{font-size: 18px;}
                 h4{font-size: 14px;}
                 .card-price-precio{
-                    background-color: red;
                     width: 100%;
                     p{
                         font-size: clamp(1rem, 2.5vw, 2rem);
