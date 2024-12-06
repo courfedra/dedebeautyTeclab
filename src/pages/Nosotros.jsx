@@ -9,7 +9,7 @@ export const Nosotros = () => {
                 <h3>¿Qué hacemos?</h3>
                 <p>
                     <span>Desde nuestros inicios en el año 2.019 nos hemos en la problematica de ventas de productos de cosméticos en nuestro pueblo, donde la comunicación se da en la vereda desde el inicio.</span>
-                    <span>Debido la expansion tecnológica, nos vimos en la obligación de adaptarnos, y aprovecharla para expandir nuestros negocios locales, entre ellos "DEDEBEAUTY"</span>
+                    <span>Debido la expansion tecnológica, nos vimos en la obligación de adaptarnos, y aprovecharla para expandir nuestros negocios locales, entre ellos DEDEBEAUTY</span>
                     <span>Por lo tanto, nos dedicamos a la venta presencial y online de productos cosméticos</span>
                 </p>
             </article>

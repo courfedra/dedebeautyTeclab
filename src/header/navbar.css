@@ -12,6 +12,7 @@ navbar{
             color: var(--negro);
             text-decoration: none;
             font-size:24px;
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
             transition: all .15s ease-in-out ;
             margin: 0 12px;
             &:hover{

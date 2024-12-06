@@ -2,6 +2,9 @@ import "./footer.css";
 import { Link } from "react-router-dom";
 import {Logo} from "../header/Logo"
 import { NavbarMenu } from "../RoutesConfig";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 
 export const Footer =()=>{
     return(
@@ -33,15 +36,18 @@ export const Footer =()=>{
                     </ul>
                 </div>
                 <div className="redesFooter">
-                    <i className="fa-brands fa-whatsapp">
+                    <div className="redes">
+                        <FaWhatsapp />
                         <p>+54 9 263 1234567</p>
-                    </i>
-                    <i className="fa-brands fa-instagram">
+                    </div>
+                    <div className="redes">
+                        <FaInstagram />
                         <p>@dedebeauty</p>
-                    </i>
-                    <i className="fa-solid fa-at">
+                    </div>
+                    <div className="redes">
+                        <FaEnvelope />
                         <p>dedebeauty@gmail.com</p>
-                    </i>
+                    </div>
 
                 </div>
             </div>

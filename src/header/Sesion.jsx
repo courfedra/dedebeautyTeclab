@@ -26,7 +26,6 @@ const Profile=()=>{
         isAuthenticated &&
         <div className="profile-sesion">
             <div className="profile-sesion-cart-user">
-                <p className="profile-sesion-user">¡Bienvenido! {user.name}</p>
                 <CartWidget/>
             </div>
             <div className="dashboardLogoutButton">

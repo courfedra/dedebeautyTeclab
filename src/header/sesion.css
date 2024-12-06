@@ -2,6 +2,7 @@
     width:20%;
     display:flex;
     justify-content: end;
+    background-color: blue;
     align-items: center;
     margin: 0 12px;
     .anchor-sesion{
@@ -14,10 +15,9 @@
 .profile-sesion{
     width: 30%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    padding-bottom:8px;
     gap: 8px;
     .profile-sesion-cart-user{
         margin: 12px 0;
@@ -26,16 +26,6 @@
         justify-content: center;
         align-items: center;
         gap: 12px;
-        .profile-sesion-user{
-            display: flex;
-            width: 100%;
-            flex-direction: column;
-            font-size: 1.2em;
-            text-align: center;
-            span{
-                color: var(--negro);
-            }
-        }
         .profile-sesion-cart{
             font-size: 24px;
             position: relative;
@@ -49,14 +39,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            .textoCarrito{
-                padding: 0 4px;
-                span{
-                    display: flex;
-                    margin: 4px 8px;
-                    font-size: 18px;
-                }
-            }
+            gap:8px;
+        }
+    }
+    .dashboardLogoutButton{
+        width: auto;
+        gap:12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a{
+            font-size: 20px;
         }
     }
 }
@@ -68,14 +62,13 @@
         gap:12px;
     }
     .profile-sesion{
+        flex-direction: column;
+        gap: 0;
         .profile-sesion-cart-user{
             display: flex;
             flex-direction: column;
             text-align: center;
-            .linkCarrito{
-                flex-direction: column;
-                gap:12px;
-            }
+            justify-content: center;
         }
     }
     .dashboardLogoutButton{

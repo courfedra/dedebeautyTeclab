@@ -67,23 +67,21 @@
     justify-content: center;
     align-items: center;
     text-align: justify;
-}
-.card-description .description{
-    margin: 24px 0;
-    font-size: 18px;
-    width: 75%;
-    text-align: center;
-}
-.card-description .category{
-    text-decoration: dotted;
-    text-transform: uppercase;
-    font-style: italic;
-    font-size: 16px;
-    color:var(--marron);
-    margin-bottom:24px;
-}
-.card-description .category:hover{
-    color:var(--gris)
+    .description{
+        margin: 24px 0;
+        font-size: 18px;
+        width: 75%;
+        text-align: center;
+    }
+    .category{
+        text-decoration: dotted;
+        text-transform: uppercase;
+        font-style: italic;
+        font-size: 16px;
+        color:var(--marron);
+        margin-bottom:24px;
+        &:hover{color:var(--gris)}
+    }
 }
 .card-price{
     width:80%;
@@ -136,4 +134,33 @@
 }
 .card-buy-false p{
     color:red;
+}
+
+@media screen and (max-width:768px){
+    .card{
+        padding: 4px 8px;
+        width:275px;
+        max-width:400px;
+        height: 150px;
+        .card-top{
+            .img-descuento{
+                .img-box{
+                    background-size: contain;
+                    max-width: 150px;
+                }
+            }
+            .card-top_brand-name{
+                width: 50%;
+                h3{font-size: 18px;}
+                h4{font-size: 14px;}
+                .card-price-precio{
+                    background-color: red;
+                    width: 100%;
+                    p{
+                        font-size: clamp(1rem, 2.5vw, 2rem);
+                    }
+                }
+            }
+        }
+    }
 }

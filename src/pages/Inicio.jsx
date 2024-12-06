@@ -8,7 +8,7 @@ import { ShowOfferProductos } from "../components/functions/ShowOfferProducts"
 import { ShowBoxCategories } from "../components/functions/ShowBoxCategories"
 import { ContextVariables } from "../components/ContextVariables"
 export const Inicio = () => {
-  const {datos, listCategories, actualizarListCategories,reiniciarListCategories}=useContext(ContextVariables);
+  const {datos}=useContext(ContextVariables);
   return (
     <div className="container-home">
       <div className="banner-home">

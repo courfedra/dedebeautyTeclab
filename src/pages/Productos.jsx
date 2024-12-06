@@ -1,17 +1,12 @@
-import productos from "../assets/products/products.json";
 import bannerMadre from "../assets/dedeBeautyBannerOfertaMadre.jpg";
 import "./productos.css";
 import { MostrarProductoLista } from "../components/productos/MostrarProductoLista";
 import {ShowCategories} from "../components/functions/ShowCategories";
-import { useState, useEffect, useContext } from "react";
+import { useContext } from "react";
 import { ContextVariables } from "../components/ContextVariables";
 
 export const Productos = () => {
-    const {datos,listCategories, actualizarListCategories,reiniciarListCategories}=useContext(ContextVariables);
-    useEffect(()=>{
-        reiniciarListCategories();
-    },[])
-    console.log(listCategories)
+    const {datos,listCategories}=useContext(ContextVariables);
     return(
         <section className="section-productos">
             <div className="banner-products">

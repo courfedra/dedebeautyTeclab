@@ -11,6 +11,7 @@
         justify-content: center;
         align-items: center;
         padding: 12px 0;
+        img{width:100%}
     }
     .categories-products-section{
         width:100%;
@@ -42,13 +43,32 @@
             }
         }
         .productos{
-            width:100%;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 10px;
-            grid-auto-rows: minmax(200px, auto);
-            grid-auto-flow: row dense;
-            place-items: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .section-productos{
+        .categories-products-section{
+            padding: 0;
+            flex-direction: column;
+            .categories-products{
+                width:100%;
+                box-shadow: none;
+                border-radius: 0;
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    text-align: center;
+                    gap: 8px;
+                    flex-wrap: wrap;
+                    li{
+                        width: 25%;
+                    }
+                }
+            }
         }
     }
 }
