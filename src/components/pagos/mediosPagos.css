@@ -43,3 +43,26 @@
 
     }
 }
+@media screen and (max-width:768px){
+    .containerMediosPagos{
+        .mediosPagos{
+            .containerLogos{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: start;
+                gap: 8px;
+                .boxLogos{
+                    width:100px;
+                    img{
+                        width:100px;
+                    }
+                    p{
+                        font-size: clamp(.75rem, 2vw, 2rem);
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

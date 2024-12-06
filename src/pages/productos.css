@@ -45,6 +45,7 @@
         .productos{
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
         }
     }
 }
@@ -66,6 +67,9 @@
                     flex-wrap: wrap;
                     li{
                         width: 25%;
+                        &:hover{
+                            transform: translateX(0);
+                        }
                     }
                 }
             }
