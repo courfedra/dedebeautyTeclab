@@ -11,7 +11,7 @@
         justify-content: center;
         align-items: center;
         padding: 12px 0;
-        img{width:100%}
+        img{max-width:100%}
     }
     .categories-products-section{
         width:100%;
@@ -19,7 +19,7 @@
         padding: 12px 0;
         background-color: var(--blanco);
         .categories-products{
-            width:15%;
+            min-width:20%;
             background-color:var(--rosa);
             box-shadow: 2.5px 2.5px 10px 0px var(--negro);
             border-radius: 0 8px 12px 0;
