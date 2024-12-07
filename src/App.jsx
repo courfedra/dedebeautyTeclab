@@ -10,7 +10,7 @@ function App() {
   return(
     <CartContextProvider>
       <ContextVariablesProvider>
-        <BrowserRouter basename="/(.*)">
+        <BrowserRouter basename="/">
           <Header />
           <Routes>
             {NavbarMenu.map((e)=>{
