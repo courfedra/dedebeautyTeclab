@@ -12,7 +12,7 @@ export const MediosPagos =()=>{
                 <div className="containerLogos">
                     {logos.map((e)=>{
                         return(
-                            <div className="boxLogos">
+                            <div key={logos.indexOf(e)} className="boxLogos">
                                 <img src={e.logo}/>
                                 <p>{e.texto}</p>
                             </div>
@@ -20,7 +20,6 @@ export const MediosPagos =()=>{
                     })}
                 </div>
             </div>
-
         </div>
     )
 }

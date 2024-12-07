@@ -6,11 +6,12 @@ import "./dashboard.css";
 import { CreateProduct } from "./CRUD/CreateProduct";
 import { DeleteProduct } from "./CRUD/DeleteProduct";
 import { ModifyProduct } from "./CRUD/ModifyProduct";
+import { MostrarCompras } from "../carrito/mostrarCompras";
 
 export const Dashboard=()=>{
     const [option,setOption] = useState('cargar')
-    const {user,isAuthenticated} = useAuth0()
-    const {datos, datosFiltrados}=useContext(ContextVariables);
+    const {isAuthenticated} = useAuth0()
+    const {datosFiltrados}=useContext(ContextVariables);
 
     const CargarData=()=>{
         switch (option) {
@@ -30,6 +31,9 @@ export const Dashboard=()=>{
             case 'modificar':
                 return(<ModifyProduct/>);
                 break;
+            case 'tickets':
+                return(<MostrarCompras/>);
+                break;
         }
     }
 
@@ -46,6 +50,7 @@ export const Dashboard=()=>{
                         <li onClick={()=>{setOption('agregar')}}>Agregar Producto</li>
                         <li onClick={()=>{setOption('quitar')}}>Quitar producto</li>
                         <li onClick={()=>{setOption('modificar')}}>Modificar producto</li>
+                        <li onClick={()=>{setOption('tickets')}}>Ver tickets</li>
                     </ul>
                 </div>
                 <div className="profile-show">
