@@ -21,7 +21,10 @@ export const Navbar=()=> {
           return(
             e.name!=undefined&&
             <Link
-              onClick={()=>{reiniciarListCategories()}}
+              onClick={()=>{
+                reiniciarListCategories()
+                menuHambChange()
+                }}
               key={NavbarMenu.indexOf(e)}
               to={e.path}>
                 {e.name}

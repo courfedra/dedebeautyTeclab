@@ -28,6 +28,7 @@ const ContextVariablesProvider = ({children}) =>{
 
     const [datos,setDatos]=useState([])
     const [datosFiltrados,setDatosFiltrados]=useState([])
+    const [ticketsCompras,setTicketsCompras]=useState([])
     const {user, isAuthenticated} = useAuth0()
     //Agregar productos a firestore
     const agregarProducto = (datosNuevos) => {
@@ -120,6 +121,22 @@ const ContextVariablesProvider = ({children}) =>{
             .catch(err=>console.log(err))
     }
 
+    const filtrarTicketsUser = () => {
+        const filterAsync = async() =>{
+            const datosTickets = query(collection(db, "orders"), where("comprador.nombre", "==", user.nickname));
+            const querySnapshot = await getDocs(datosTickets);
+            //metodo "docs" convierte array de documentos a array de objetos
+            const dataFromFirestone = querySnapshot.docs.map(item=>({
+                id:item.id,
+                ...item.data()
+            }))
+            return dataFromFirestone;
+        }
+        filterAsync()
+            .then(result=>setTicketsCompras(result))
+            .catch(err=>console.log(err))
+    }
+
     //componentDidMount
     useEffect(()=>{
         actualizarProductosMostrar()
@@ -127,6 +144,7 @@ const ContextVariablesProvider = ({children}) =>{
     //actualizar Datos de usuarios al loguearse
     useEffect(()=>{
         filtrarDatosUser()
+        filtrarTicketsUser()
     },[isAuthenticated]);
 
 return(
@@ -134,6 +152,7 @@ return(
         value={{
             datos,
             datosFiltrados,
+            ticketsCompras,
             agregarProducto,
             modificarProducto,
             borrarProducto,

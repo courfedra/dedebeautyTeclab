@@ -1,8 +1,9 @@
 .sesion{
     width:20%;
     display:flex;
+    flex-direction: column;
+    gap: 8px;
     justify-content: end;
-    background-color: blue;
     align-items: center;
     margin: 0 12px;
     .anchor-sesion{

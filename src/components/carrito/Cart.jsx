@@ -2,7 +2,6 @@ import { useAuth0 } from "@auth0/auth0-react";
 import {useContext} from "react"
 import { CartContext } from "../CartContext"
 import {ProdCart} from "./ProdCart"
-import TotalPrice from "./TotalPrice"
 import {Link} from "react-router-dom"
 import { increment,updateDoc,doc,setDoc,collection, serverTimestamp } from "firebase/firestore";
 import {db} from "../../utils/firebaseConfig"
@@ -19,14 +18,13 @@ export const Cart = () => {
 
     const ctx = useContext(CartContext)
 
-
     const createOrder = () =>{
         const order ={
             comprador:{
                 nombre:user.nickname,
                 email:user.email,
             },
-            date: serverTimestamp(),
+            date: serverTimestamp().toString(),
             items: ctx.cartList.map(item=>({
                 id:item.id,
                 title:item.nombre,

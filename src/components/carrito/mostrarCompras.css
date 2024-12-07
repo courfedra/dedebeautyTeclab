@@ -1,0 +1,46 @@
+.containerTickets{
+    width: 75%;
+    .boxTicket{
+        border: 5px dashed var(--gris);
+        width: 100%;
+        margin:8px 0;
+        padding: 0 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .ticketInfoComprador{
+            width: 50%;
+            font-size: clamp(1rem, 2.5vw, 2rem);
+            p{
+                padding: 4px 0;
+                font-weight: 700;
+                span{font-weight: 500;}
+            }
+        }
+        .ticketInfoArticulos{
+            width: 50%;
+            font-size: clamp(1rem, 2.5vw, 2rem);
+            p{
+                padding: 4px 0;
+                font-weight: 700;
+                span{font-weight: 500;}
+            }
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .containerTickets{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        .boxTicket{
+            display: flex;
+            flex-direction: column;
+            margin:8px 0;
+            padding: 0 4px;
+            .ticketInfoComprador,.ticketInfoArticulos{
+                width: 100%;
+            }
+        }
+    }
+}
