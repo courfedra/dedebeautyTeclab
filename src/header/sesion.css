@@ -9,7 +9,7 @@
     .anchor-sesion{
         padding: 0 .5em;
         &:hover{
-            color: var(--eosa);
+            color: var(--rosa);
         }
     }
 }

@@ -6,7 +6,7 @@ import "./dashboard.css";
 import { CreateProduct } from "./CRUD/CreateProduct";
 import { DeleteProduct } from "./CRUD/DeleteProduct";
 import { ModifyProduct } from "./CRUD/ModifyProduct";
-import { MostrarCompras } from "../carrito/mostrarCompras";
+import {MostrarCompras} from "../carrito/MostrarCompras"
 
 export const Dashboard=()=>{
     const [option,setOption] = useState('cargar')
