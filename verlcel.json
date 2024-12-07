@@ -3,14 +3,6 @@
         {
             "source": "/(.*)",
             "destination": "/"
-        },
-        {
-            "source": "/contacto",
-            "destination": "/"
-        },
-        {
-            "source": "/nosotros",
-            "destination": "/nosotros"
         }
     ]
 }
