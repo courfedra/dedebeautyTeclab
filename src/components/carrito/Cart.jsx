@@ -24,7 +24,7 @@ export const Cart = () => {
                 nombre:user.nickname,
                 email:user.email,
             },
-            date: serverTimestamp().toString(),
+            date: serverTimestamp(),
             items: ctx.cartList.map(item=>({
                 id:item.id,
                 title:item.nombre,
